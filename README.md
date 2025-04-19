@@ -16,7 +16,7 @@ Replication Materials for
 - In case you would like to update the data, we followed the following steps to obtain forecasts:
  1) download quarterly forecasts from the ECB SPF website (https://www.ecb.europa.eu/stats/ecb_surveys/survey_of_professional_forecasters/html/all_data.en.html).
 Put the downloaded csv files in "Get Updated Data" -> "New folder")
- 2) run ["Excel.py"](/Excel.py) and "Excel2.py" to merge separate Excels from ECB SPF together
+ 2) run "Excel.py" and "Excel2.py" to merge separate Excels from ECB SPF together
  3) the output of this procedure will be called "second_edit.csv" which collects all forecasts together. Make sure to transpose that matrix if you want to have forecasters in columns and time in rows.
  4) use the procedure described in the paper to get most frequent forecasters. This will produce new matrix of yhats. 
  To get updated forecast errors just subtract updated true series from updated yhats.
@@ -30,4 +30,4 @@ Put the downloaded csv files in "Get Updated Data" -> "New folder")
 
 ## MONTE CARLO RESULTS (in the Supplementary Appendix)  
 [_we ran the simulations on ml.r5.4xlarge AWS instance (vCPU = 16, memory = 128 GiB)_]  
-"_IJF_simulations_weights.ipynb_" and "_IJF_simulations_msfe.ipynb_" provide the code to replicate Monte Carlo results in the Supplementary Appendix.
+["_IJF_simulations_weights.ipynb_"](/IJF_simulations_weights.ipynb) and ["_IJF_simulations_msfe.ipynb_"](IJF_simulations_msfe.ipynb) provide the code to replicate Monte Carlo results in the Supplementary Appendix.
